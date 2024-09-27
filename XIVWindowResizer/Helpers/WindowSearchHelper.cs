@@ -22,7 +22,7 @@ namespace XIVWindowResizer.Helpers
         public IntPtr FindWindowHandle()
         {
             IntPtr handle = IntPtr.Zero;
-            while ((handle = FindWindowEx(IntPtr.Zero, handle, "FFXIVGAME", "FINAL FANTASY XIV")) != IntPtr.Zero)
+            while ((handle = FindWindowEx(IntPtr.Zero, handle, "FFXIVGAME", "最终幻想XIV")) != IntPtr.Zero)
             {
                 _ = GetWindowThreadProcessId(handle, out int pid);
 
